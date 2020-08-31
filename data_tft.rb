@@ -2,6 +2,7 @@ class Data_tft
     @@summonerNameList = []
     @@summonerInfoList = []
     @@puuidList = []
+    @@matchidList = []
 
     def setSummonerNameList(summonerName)
         @@summonerNameList.push(summonerName)
@@ -25,6 +26,16 @@ class Data_tft
     end
     def getPuuidList()
         return @@puuidList
+    end
+
+    def setMatchidList(matchid)
+        @@matchidList.push(matchid)
+    end
+    def getMatchidList()
+        return @@matchidList
+    end
+    def optimizeMatchidList() #配列を平坦化し、重複項目の単一化を実行
+        @@matchidList.flatten!.uniq!
     end
 
 end

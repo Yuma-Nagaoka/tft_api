@@ -6,7 +6,7 @@ require './challenger_list'
 require './puuid_list'
 require './match_list'
 
-API_KEY = 'RGAPI-bc827460-4965-4366-890c-322bde38362e' #　取得したAPI　KEY
+API_KEY = 'RGAPI-335109ef-1418-4195-9da9-11f842c5abce' #　取得したAPI　KEY
 
 class Main
     challenger_list = Challenger_list.new(API_KEY)

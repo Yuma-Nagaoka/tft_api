@@ -3,6 +3,7 @@ class Data_tft
     @@summonerInfoList = []
     @@puuidList = []
     @@matchidList = []
+    @@matchInfoList = []
 
     def setSummonerNameList(summonerName)
         @@summonerNameList.push(summonerName)
@@ -38,4 +39,11 @@ class Data_tft
         @@matchidList.flatten!.uniq!
     end
 
+    def setMatchInfoList(matchInfo)
+        @@matchInfoList.push(matchInfo)
+    end
+    def getMatchInfoList()
+        return @@matchInfoList
+    end
+    
 end

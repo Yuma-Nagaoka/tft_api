@@ -19,5 +19,6 @@ class Main
     puuid_list.putPuuidList
 
     match_list = Match_list.new(API_KEY)
-    match_list.getMatchList
+    match_list.getMatchidList #matchidを取得し、リストを作成
+    match_list.getMatchInfoList
 end

@@ -4,6 +4,22 @@ class Data_tft
     @@puuidList = []
     @@matchidList = []
     @@matchInfoList = []
+    @@top4RateList = []
+    # top4RateHash = 
+    # {
+    #     "summonerName" => "player1",
+    #     "puuid" => "abc", 
+    #     "matchList" => [
+    #         {
+    #             "matchid" => "123", 
+    #             "placement" => 1 
+    #         }
+    #     ], 
+    #     "top4Rate" => 1 ,
+    #     "numberOfMatches" => 1
+    # }
+
+        
 
     def setSummonerNameList(summonerName)
         @@summonerNameList.push(summonerName)
@@ -11,6 +27,7 @@ class Data_tft
     def getSummonerNameList()
         return @@summonerNameList
     end
+#
 
     def setSummonerInfoList(summonerInfo)
         @@summonerInfoList.push(summonerInfo)
@@ -18,6 +35,7 @@ class Data_tft
     def getSummonerInfoList()
         return @@summonerInfoList
     end
+#
 
     def setPuuidList(name, puuid)
         puuidHush = {}
@@ -28,6 +46,7 @@ class Data_tft
     def getPuuidList()
         return @@puuidList
     end
+#
 
     def setMatchidList(matchid)
         @@matchidList.push(matchid)
@@ -38,6 +57,7 @@ class Data_tft
     def optimizeMatchidList() #配列を平坦化し、重複項目の単一化を実行
         @@matchidList.flatten!.uniq!
     end
+#
 
     def setMatchInfoList(matchInfo)
         @@matchInfoList.push(matchInfo)
@@ -45,5 +65,35 @@ class Data_tft
     def getMatchInfoList()
         return @@matchInfoList
     end
-    
+#
+
+    def initTop4RateList(name, puuid)
+        top4RateHash = 
+        {
+            "summonerName" => name,
+            "puuid" => puuid, 
+            "matchList" => [
+                #{
+                    #"matchid" => "123", 
+                    #"placement" => 1 
+                #}
+            ], 
+            "top4Rate" => 0,
+            "numberOfMatches" => 0
+        }
+        @@top4RateList.push top4RateHash
+    end
+    def setTop4RateList(name, puuid, matchid, placement)
+        @@top4RateList.each do |summoner|
+            if summoner["puuid"] == puuid then
+                matchHash = {"matchid" => matchid, "placement" => placement}
+                summoner["matchList"].push matchHash
+            end
+        end
+    end
+    def getTop4RateList()
+        return @@top4RateList
+    end
+#
+
 end

@@ -28,6 +28,7 @@ class Puuid_list
         @@data_tft.getSummonerInfoList.each do |summonerInfo|
             if summonerInfo["name"] != nil then
                 @@data_tft.setPuuidList(summonerInfo["name"], summonerInfo["puuid"])
+                @@data_tft.initTop4RateList(summonerInfo["name"], summonerInfo["puuid"])
             # elsif summonerInfo["status"]["status_code"] == 429 then
             #     p "Rate limit exceed"
             else 

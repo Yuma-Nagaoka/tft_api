@@ -51,7 +51,7 @@ class Match_list
             end
         end
         @@data_tft.getTop4RateList.each do |a|
-            p a
+            pp a
         end
             
     end

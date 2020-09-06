@@ -79,7 +79,8 @@ class Data_tft
                 #}
             ], 
             "top4Rate" => 0,
-            "numberOfMatches" => 0
+            "numberOfMatches" => 0,
+            "top4Matches" => 0
         }
         @@top4RateList.push top4RateHash
     end
@@ -88,8 +89,14 @@ class Data_tft
             if summoner["puuid"] == puuid then
                 matchHash = {"matchid" => matchid, "placement" => placement}
                 summoner["matchList"].push matchHash
+                summoner["numberOfMatches"] += 1
+                if placement <= 4 then
+                    summoner["top4Matches"] += 1
+                end
+                summoner["top4Rate"] = summoner["top4Matches"].to_f / summoner["numberOfMatches"]
             end
         end
+        @@top4RateList.sort_by! { |a| a["top4Rate"] }.reverse!
     end
     def getTop4RateList()
         return @@top4RateList

@@ -27,6 +27,9 @@ class Data_tft
     def getSummonerNameList()
         return @@summonerNameList
     end
+    def removeSummonerNameList(summonerName)
+        @@summonerNameList.delete(summonerName)
+    end
 #
 
     def setSummonerInfoList(summonerInfo)
@@ -41,6 +44,7 @@ class Data_tft
         puuidHush = {}
         puuidHush.store("name", name)
         puuidHush.store("puuid", puuid)
+        puuidHush.store("tier", "master")
         @@puuidList.push(puuidHush)
     end
     def getPuuidList()
@@ -57,6 +61,9 @@ class Data_tft
     def optimizeMatchidList() #配列を平坦化し、重複項目の単一化を実行
         @@matchidList.flatten!.uniq!
     end
+    def removeMatchidList(matchid)
+        @@matchidList.delete(matchid)
+    end
 #
 
     def setMatchInfoList(matchInfo)
@@ -68,6 +75,7 @@ class Data_tft
 #
 
     def initTop4RateList(name, puuid)
+        #p "initTop4RateList"
         top4RateHash = 
         {
             "summonerName" => name,
@@ -101,6 +109,7 @@ class Data_tft
     def getTop4RateList()
         return @@top4RateList
     end
+    
 #
 
 end

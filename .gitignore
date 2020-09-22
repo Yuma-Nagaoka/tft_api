@@ -1,0 +1,4 @@
+# test codes フォルダはgitに含めない
+test codes/
+# data_tft_json フォルダはgitに含めない
+data_tft_json/

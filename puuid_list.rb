@@ -12,7 +12,7 @@ class Puuid_list
 #
     def getSummonerInfo
         @@data_tft.getSummonerNameList().each do |summonerName|
-            uri = URI.encode("https://jp1.api.riotgames.com/tft/summoner/v1/summoners/by-name/#{summonerName}?api_key=#{@api_key}")
+            uri = URI.encode_www_form_component("https://jp1.api.riotgames.com/tft/summoner/v1/summoners/by-name/#{summonerName}?api_key=#{@api_key}")
             uri = URI.parse(uri)
             return_data = Net::HTTP.get(uri)
             summoner_info = JSON.parse(return_data)
@@ -46,7 +46,7 @@ class Puuid_list
                 puuidList = JSON.load(file)
             end
         else
-            File.open("./data_tft_json/puuid_list.json", "w") do |file|
+            File.open("./data_tft_json/puuid_list.json", "w+") do |file|
                 file.write("[\n]")
             end
         end
@@ -55,7 +55,7 @@ class Puuid_list
         puuidList.flatten!
         #p puuidList
         puuidList.each do |puuid|
-            break if puuid["tier"] == "demoted"
+            next if puuid["tier"] == "demoted"
             @@data_tft.initTop4RateList(puuid["name"], puuid["puuid"])
         end
         File.open("./data_tft_json/puuid_list.json", "w") do |file|

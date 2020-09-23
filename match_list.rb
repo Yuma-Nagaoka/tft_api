@@ -6,7 +6,7 @@ require './data_tft'
 class Match_list
 
     @@data_tft = Data_tft.new
-    COUNT = 2
+    COUNT = 1
     
     def initialize(api_key, game_version)
         @api_key = api_key
@@ -20,7 +20,7 @@ class Match_list
         end
         puuid_list.each do |puuid|
             if puuid["tier"] == "demoted" then
-                break
+                next
             end
             uri = URI.parse("https://asia.api.riotgames.com/tft/match/v1/matches/by-puuid/#{puuid["puuid"]}/ids?count=#{COUNT}&api_key=#{@api_key}")
             return_data = Net::HTTP.get(uri)
@@ -38,6 +38,7 @@ class Match_list
 
         if File.exist?("./data_tft_json/match_info_list.json") then
             File.open("./data_tft_json/match_info_list.json") do |file|
+                #p "exist"
                 matchInfoList = JSON.load(file)
             end
         else
@@ -45,10 +46,10 @@ class Match_list
         end
         #pp matchInfoList
         matchInfoList.each do |matchInfo|
-            p matchInfo["metadata"]["match_id"]
-            if @@data_tft.getMatchidList.include?(matchInfo["metadata"]["match_id"]) then
+            p matchInfo.dig("metadata", "match_id")
+            if @@data_tft.getMatchidList.include?(matchInfo.dig("metadata", "match_id")) then
                 p "Remove matchid"
-                @@data_tft.removeMatchidList(matchInfo["metadata"]["match_id"])
+                @@data_tft.removeMatchidList(matchInfo.dig("metadata", "match_id"))
             end
         end   
         # if matchInfoList.empty? then
@@ -75,7 +76,7 @@ class Match_list
             p status_code
             matchInfo = JSON.parse(return_data)
             #if matchInfo.dig("info", "game_version") == @game_version then
-                @@data_tft.setMatchInfoList(matchInfo)
+                @@data_tft.setMatchInfoList(matchInfo) if status_code == 200
             #end
         end
         #p @@data_tft.getMatchInfoList

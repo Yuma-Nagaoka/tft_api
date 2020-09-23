@@ -55,7 +55,7 @@ class Puuid_list
         puuidList.flatten!
         #p puuidList
         puuidList.each do |puuid|
-            break if puuid["tier"] == "demoted"
+            next if puuid["tier"] == "demoted"
             @@data_tft.initTop4RateList(puuid["name"], puuid["puuid"])
         end
         File.open("./data_tft_json/puuid_list.json", "w") do |file|

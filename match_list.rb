@@ -47,7 +47,7 @@ class Match_list
         matchInfoList.each do |matchInfo|
             p matchInfo["metadata"]["match_id"]
             if @@data_tft.getMatchidList.include?(matchInfo["metadata"]["match_id"]) then
-                p "Remove matchid"
+                p "This match is already acquired"
                 @@data_tft.removeMatchidList(matchInfo["metadata"]["match_id"])
             end
         end   

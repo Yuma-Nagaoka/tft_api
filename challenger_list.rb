@@ -39,7 +39,8 @@ class Challenger_list
         #pp puuidList
         puuidList.each do |puuid|
             if @@data_tft.getSummonerNameList.include?(puuid["name"]) then
-                 @@data_tft.removeSummonerNameList(puuid["name"])
+                @@data_tft.removeSummonerNameList(puuid["name"])
+                puuid["tier"] = "master"
             else 
                 p "else"
                 puuid["tier"] = "demoted"

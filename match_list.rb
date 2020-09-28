@@ -24,7 +24,10 @@ class Match_list
             end
             uri = URI.parse("https://asia.api.riotgames.com/tft/match/v1/matches/by-puuid/#{puuid["puuid"]}/ids?count=#{COUNT}&api_key=#{@api_key}")
             return_data = Net::HTTP.get(uri)
-            @@data_tft.setMatchidList(JSON.parse(return_data))
+            status_code = Net::HTTP.get_response(uri).code
+            p status_code
+            @@data_tft.setMatchidList(JSON.parse(return_data)) if status_code == "200"
+            sleep 1
         end
         if @@data_tft.getMatchidList.empty? then
             return 1
@@ -75,8 +78,10 @@ class Match_list
             status_code = Net::HTTP.get_response(uri).code
             p status_code
             matchInfo = JSON.parse(return_data)
+            p "getMatchInfo for ", matchid
+            sleep 1 #escape 429Error
             #if matchInfo.dig("info", "game_version") == @game_version then
-                @@data_tft.setMatchInfoList(matchInfo) if status_code == 200
+            @@data_tft.setMatchInfoList(matchInfo) if status_code == "200"
             #end
         end
         #p @@data_tft.getMatchInfoList
@@ -94,8 +99,8 @@ class Match_list
                 file.write("[\n]")
             end
         end
-        #pp "before", matchInfoList
-        #pp @@data_tft.getMatchInfoList
+        pp "before", matchInfoList
+        pp @@data_tft.getMatchInfoList
         matchInfoList.push(@@data_tft.getMatchInfoList)
         matchInfoList.flatten!
         #pp "after", matchInfoList

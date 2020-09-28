@@ -12,7 +12,9 @@ class Challenger_list
     end
 
     def getChallengerList
-        uri = URI.parse("https://jp1.api.riotgames.com/tft/league/v1/master?api_key=#{@api_key}")
+        p "grandmaster list"
+        uri = URI.parse("https://jp1.api.riotgames.com/tft/league/v1/grandmaster?api_key=#{@api_key}")
+        #p uri
         return_data = Net::HTTP.get(uri)
         summoner_data = JSON.parse(return_data)
 

@@ -6,7 +6,7 @@ require './challenger_list'
 require './puuid_list'
 require './match_list'
 
-API_KEY = 'RGAPI-3be51def-7b3a-449a-959b-5ced688e3736' #　取得したAPI　KEY
+API_KEY = 'RGAPI-4b9aff1a-c76b-4299-83dc-45af1c7895d7' #　取得したAPI　KEY
 GAME_VERSION = "Version 10.19.335.4706 (Sep 10 2020/19:33:20) [PUBLIC] <Releases/10.19>"
 
 class Main

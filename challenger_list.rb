@@ -12,8 +12,8 @@ class Challenger_list
     end
 
     def getChallengerList
-        p "grandmaster list"
-        uri = URI.parse("https://jp1.api.riotgames.com/tft/league/v1/grandmaster?api_key=#{@api_key}")
+        p "challenger list"
+        uri = URI.parse("https://jp1.api.riotgames.com/tft/league/v1/challenger?api_key=#{@api_key}")
         #p uri
         return_data = Net::HTTP.get(uri)
         summoner_data = JSON.parse(return_data)
@@ -42,9 +42,9 @@ class Challenger_list
         puuidList.each do |puuid|
             if @@data_tft.getSummonerNameList.include?(puuid["name"]) then
                 @@data_tft.removeSummonerNameList(puuid["name"])
-                puuid["tier"] = "master"
+                puuid["tier"] = "challenger"
             else 
-                p "else"
+                p "The summoner is demoted ", puuid["name"]
                 puuid["tier"] = "demoted"
             end
         end   

@@ -99,8 +99,8 @@ class Match_list
                 file.write("[\n]")
             end
         end
-        pp "before", matchInfoList
-        pp @@data_tft.getMatchInfoList
+        #pp "before", matchInfoList
+        #pp @@data_tft.getMatchInfoList
         matchInfoList.push(@@data_tft.getMatchInfoList)
         matchInfoList.flatten!
         #pp "after", matchInfoList

@@ -1,6 +1,7 @@
 require 'net/http'
 require 'uri'
 require 'json'
+require 'cgi'
 
 class Puuid_list
 
@@ -12,8 +13,8 @@ class Puuid_list
 #
     def getSummonerInfo
         @@data_tft.getSummonerNameList().each do |summonerName|
-            uri = URI.encode("https://jp1.api.riotgames.com/tft/summoner/v1/summoners/by-name/#{summonerName}?api_key=#{@api_key}")
-            uri = URI.parse(uri)
+            summonerName_escape = CGI.escape(summonerName)
+            uri = URI.parse("https://jp1.api.riotgames.com/tft/summoner/v1/summoners/by-name/#{summonerName_escape}?api_key=#{@api_key}")
             #p uri
             return_data = Net::HTTP.get(uri)
             summoner_info = JSON.parse(return_data)

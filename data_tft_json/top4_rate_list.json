@@ -1,0 +1,411 @@
+[
+  {
+    "summonerName": "抖音搜索雨",
+    "puuid": "VvjEhcg4CKKlrttcHza9dYZ7fWMw7pJX-VgEpHZJtP2ig6tiZ19gFH94PQOmcbuDETmuX_D4m9fnWg",
+    "matchList": [
+      {
+        "matchid": "JP1_319537593",
+        "placement": 3
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "南梦芽大好き",
+    "puuid": "cubqFywCfNaQCoZtRBID9VRS51-zgXjZz8THQx3FL41xT1OTklJc4RXSIf7qLSbdp-G76gw6IdAR7A",
+    "matchList": [
+      {
+        "matchid": "JP1_319560992",
+        "placement": 2
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "世界のあららぎ",
+    "puuid": "6QPf7qL9e5VrRG2EjofPsZnDb8S4OWAnoBCDjA6jn44Ou1GDhmUzuZN4W_p7olbnN6N2AhsAdLA-eg",
+    "matchList": [
+      {
+        "matchid": "JP1_319567847",
+        "placement": 1
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "sobakotu",
+    "puuid": "-ZjHVKkRiLFKPAnXWkbh9R4rM6mVxNzUk-dpZucoRK4q5aaipkqeEeAWKp96-Y2wMaZiDpE7HRoZSw",
+    "matchList": [
+      {
+        "matchid": "JP1_319245836",
+        "placement": 1
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "sizzzzzhu",
+    "puuid": "L-0Kah5aUtDy0xOi993nhNm4lyeKAEsM0d_k-ZDEFUoRymA1T0rBsOgKfetDDGVudpU6560a4TOY3w",
+    "matchList": [
+      {
+        "matchid": "JP1_319591072",
+        "placement": 4
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "777jakak",
+    "puuid": "TS8BjVisp6M4NgSMhaMGLkUpgcGvye0clI630M5OAqpfg88B74YMF2Y2oHj_zWOgm3Feg73KXG3BuQ",
+    "matchList": [
+      {
+        "matchid": "JP1_319588818",
+        "placement": 2
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "dayona",
+    "puuid": "Oq-EEcC2EGzi8KudZ3O45SSgvDG6gmH8hoBLo16cOJn3IGlDE4Ku7F9dWDqaIK0EhWGdvMQ4mFX76Q",
+    "matchList": [
+      {
+        "matchid": "JP1_319575321",
+        "placement": 3
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "Bacon2913",
+    "puuid": "g8vanonxj3g_OT1h7eY7bk3Tr9xylgSYhIBaHx59Kopm0D0CcMK0oqBOwwFRNMrg0f_CGs9LiyFd5g",
+    "matchList": [
+      {
+        "matchid": "JP1_319417038",
+        "placement": 2
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "高科 奈桜",
+    "puuid": "q-TaLRqMiMa4CbtB5EioY1xmFxhdU4dqE1SDZAb6EkwZV-RuCANt3R1BN-7yyaPfdQK3eVlh79749w",
+    "matchList": [
+      {
+        "matchid": "JP1_319618646",
+        "placement": 2
+      },
+      {
+        "matchid": "JP1_319417038",
+        "placement": 1
+      },
+      {
+        "matchid": "JP1_319622509",
+        "placement": 2
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 3,
+    "top4Matches": 3
+  },
+  {
+    "summonerName": "summertimer",
+    "puuid": "zlvOBDlpHQez-uuCOtfHbtiXh5QqRZcRe1xvYJMGGu2tHGDZot5_PIMFV1O5TpbmB6EMzGb5QDd-sA",
+    "matchList": [
+      {
+        "matchid": "JP1_319582271",
+        "placement": 1
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "title",
+    "puuid": "WyMFr2moQuZ2riFIrReT1GuQyr-utrjc1szOPCTuVzOEGxJSK8T2238Li7myYpHrTVjevMe72TeV1w",
+    "matchList": [
+      {
+        "matchid": "JP1_319582271",
+        "placement": 3
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "しかめまどか",
+    "puuid": "Dn_NLfCkqoVOi-f6i4wd1_LnqdG-FoNKO2rAAPgaoHp8LNVpX6QHzzHKKE3w7QEORVGvgfDUVFRWvw",
+    "matchList": [
+      {
+        "matchid": "JP1_318370766",
+        "placement": 2
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "奇怪的旗手",
+    "puuid": "UGNPZcPN4WEjwA7EhhWYVpxEpnXk2AnVUQdyXEgirdkPBugnD8S6ohobr6q-jxP9Oyvedh7Me4ySJQ",
+    "matchList": [
+      {
+        "matchid": "JP1_319618646",
+        "placement": 1
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "Best 佐藤 JP",
+    "puuid": "cqiwoxH66dLSfhVuqnYXm33LeTjkkurzbm1_iwN57jFIFQsmghCiXYaRoneg447_O5I8GfcAAOfkEw",
+    "matchList": [
+      {
+        "matchid": "JP1_319551356",
+        "placement": 1
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "やつはし",
+    "puuid": "jRS8OodxbO6WDRsGTgf5mZWQ51txbRj0e04EiZMb_XKNH6wdmQXDmhc_bBWRlDoGsZiIo9jmPqofjA",
+    "matchList": [
+      {
+        "matchid": "JP1_319550282",
+        "placement": 2
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "kaito716",
+    "puuid": "3lQfZnU8dAjZ-ErNetYyYiGSufMNoKh8cnnrzR2eVAC5r95F3zo0bUrezkk3ylGcoCBHyt6tM6omfA",
+    "matchList": [
+      {
+        "matchid": "JP1_319591072",
+        "placement": 3
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "lossyy99",
+    "puuid": "kuJWaLQuKOY_-Tgg9M8wxWONqy3SxtOW6qjQrTVku_lSRLQBc21ttLqXUowwnJz94Xcx8BPUIeEWSw",
+    "matchList": [
+      {
+        "matchid": "JP1_318955662",
+        "placement": 3
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "鳥取で一番強い男",
+    "puuid": "pGjdrFnvVfVOO2bsq3mJaF7m60F7eVynMi_9ai2nRtmh9u19KyQlt47iDyzHnaJuZdmtLOmdtqMx9A",
+    "matchList": [
+      {
+        "matchid": "JP1_319535711",
+        "placement": 4
+      }
+    ],
+    "top4Rate": 1.0,
+    "numberOfMatches": 1,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "てんまっ",
+    "puuid": "LPszbdVuIhSAdYWKquyF_-GmcTOGDZ8a5bRRqJBaJaNFWDcyqTly9LqpAAbzEFaA2qrhBeAIPc3u_w",
+    "matchList": [
+      {
+        "matchid": "JP1_319245836",
+        "placement": 6
+      },
+      {
+        "matchid": "JP1_319597313",
+        "placement": 3
+      }
+    ],
+    "top4Rate": 0.5,
+    "numberOfMatches": 2,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "zqajdbjd",
+    "puuid": "nPzDTw5KQENU6l5B9V7UZToC13wgqA6h6VsnT1HT45f7NQs3as_k5dXX5IUq8j1FXPFolI_ZLW18PA",
+    "matchList": [
+      {
+        "matchid": "JP1_319623906",
+        "placement": 8
+      },
+      {
+        "matchid": "JP1_319245836",
+        "placement": 2
+      }
+    ],
+    "top4Rate": 0.5,
+    "numberOfMatches": 2,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "Captain DoanHuy",
+    "puuid": "PfFYFkeV5R8UQi6xcAZtuC_aaJ2WVrbJW6Sjd1zN1GRE2RWoFOFWd5jFljg5uW4ClbWzNZNpAeYEGQ",
+    "matchList": [
+      {
+        "matchid": "JP1_319623906",
+        "placement": 4
+      },
+      {
+        "matchid": "JP1_319630340",
+        "placement": 5
+      }
+    ],
+    "top4Rate": 0.5,
+    "numberOfMatches": 2,
+    "top4Matches": 1
+  },
+  {
+    "summonerName": "りーり",
+    "puuid": "D5lIw05cD-QNaz9aT6hMbASI1rhpox42oW11jtz1bCHg7RR9ot3OWVKa-Zd8ppgamxF5q7BYji9KRw",
+    "matchList": [
+      {
+        "matchid": "JP1_319623906",
+        "placement": 5
+      },
+      {
+        "matchid": "JP1_319417038",
+        "placement": 6
+      },
+      {
+        "matchid": "JP1_319630340",
+        "placement": 3
+      },
+      {
+        "matchid": "JP1_319588818",
+        "placement": 8
+      },
+      {
+        "matchid": "JP1_319535711",
+        "placement": 3
+      }
+    ],
+    "top4Rate": 0.4,
+    "numberOfMatches": 5,
+    "top4Matches": 2
+  },
+  {
+    "summonerName": "o泊秦淮o",
+    "puuid": "5k_3-ymjilW0lzn--0xZqftv8OvITVKmPiLcIv_90p1uOvDf1TQj3NEaE2LDtDsJq7g1bDsKAxXZ6A",
+    "matchList": [
+      {
+        "matchid": "JP1_319619895",
+        "placement": 8
+      }
+    ],
+    "top4Rate": 0.0,
+    "numberOfMatches": 1,
+    "top4Matches": 0
+  },
+  {
+    "summonerName": "mazy1",
+    "puuid": "llXdE9bskwiOPK-yakGJJS8oZN4MnslIKf8AUoekeHIl85M_UIHuicWCD-FT1SojcO58p_hpyoSOZA",
+    "matchList": [
+      {
+        "matchid": "JP1_319551356",
+        "placement": 7
+      },
+      {
+        "matchid": "JP1_319616074",
+        "placement": 6
+      }
+    ],
+    "top4Rate": 0.0,
+    "numberOfMatches": 2,
+    "top4Matches": 0
+  },
+  {
+    "summonerName": "GUMandDAM",
+    "puuid": "sbOpg46LTbAuIEOhw8CDPG3gLXWnuqBQ1zILRe2ktqbej_kN9FAC-zZX-wdA-wJRbeMvkR_UWJaCHg",
+    "matchList": [
+      {
+        "matchid": "JP1_319597313",
+        "placement": 6
+      },
+      {
+        "matchid": "JP1_319622509",
+        "placement": 6
+      }
+    ],
+    "top4Rate": 0.0,
+    "numberOfMatches": 2,
+    "top4Matches": 0
+  },
+  {
+    "summonerName": "Sarasouju",
+    "puuid": "1eWj6inSo3SZrXvnL4ylKAzAruK7P9LCSobIX3VHGj17-UwuKdtMq7FLjzkjHLAvpoP781U3U-doYw",
+    "matchList": [
+
+    ],
+    "top4Rate": 0,
+    "numberOfMatches": 0,
+    "top4Matches": 0
+  },
+  {
+    "summonerName": "ekollon",
+    "puuid": "1sZTXhfMEhnNZemwKqcl0lvrQW4LnkdyYggEsG4AyWRO5z-cvKLgcZWbOgocnTLBh8GkaS3K30k_fA",
+    "matchList": [
+
+    ],
+    "top4Rate": 0,
+    "numberOfMatches": 0,
+    "top4Matches": 0
+  },
+  {
+    "summonerName": "うにの軍艦",
+    "puuid": "jvoWXY5BoJ_pTC1Skh8g3Pqs-er1pj68Xi5W_Vnn1-QOBwRxNHvBxX8Hb_-dX5SXZDBMhD1sa_X6Pg",
+    "matchList": [
+
+    ],
+    "top4Rate": 0,
+    "numberOfMatches": 0,
+    "top4Matches": 0
+  },
+  {
+    "summonerName": "ゆめみ",
+    "puuid": "8lRvPF9THDdsOeqbPeDTI0DUPnIpMngM0cYDc5FDVmkncpjuYpXmgXEp1PrzuWNLyYcs_uAKBpVMMA",
+    "matchList": [
+
+    ],
+    "top4Rate": 0,
+    "numberOfMatches": 0,
+    "top4Matches": 0
+  }
+]
